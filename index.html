@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Question no. 1
+        let emptyArray = []
+        console.log(emptyArray)
+
+// Question no. 2
+        let items = ['pen', 'pencil', 'marker'];
+        console.log(items[0]);
+        console.log(items[2]);
+    // another way
+        // let firstItem = items[0];
+        // let lastItem = items[2];
+        // console.log(firstItem);
+        // console.log(lastItem);
+
+// Question no. 3
+        let arr = [1, 2, 3]
+        arr.push(4)
+        console.log(arr)
+
+// Question no. 4
+        let array = [4, 5, 6, 7]
+        array.pop()
+        console.log(array)
+
+// Question no. 5
+        const num = [1, 2, 3, 4, 5, 6]
+        let sum = 0
+        for(let i = 0; i < num.length; i++){
+            if(num[i] % 2 === 0){
+                sum += num[i]
+            }
+        }
+        console.log('sum of even numbers ===>' , sum)   
+        
+// Question no. 6
+        const products = ['tableFan', 'table', 'chair']
+        const exist = products.includes('table')
+        console.log('Does table exists ===>', exist)
+
+// Question no. 7
+        let points = [1, 2, 3, 4, 5, 6]
+        points = points.filter(points => points !== 5)
+        console.log(points)
+
+// Question no. 8
+        let sub = ['english', 'urdu', 'islamiat']
+        let subject = ['physics', 'math', 'computer']
+        console.log(sub.concat(subject))
+
+// Question no. 9
+        let array1 = [5, 8, 3, 6, 9, 1]
+        array1.sort()
+        console.log(array1)
+
+// Question no. 10
+    // map() modifies each element in array
+        let numbers = [1, 4, 8]
+        let data = numbers.map((numbers) => numbers * 5)
+        console.log(data)
+    // forEach() performs specific action on each element in an array
+        const color = ['blue', 'green', 'pink']
+        const resultantArray = color.forEach((color) => console.log(color))
+        console.log(resultantArray)
+    </script>
+</body>
+</html>
